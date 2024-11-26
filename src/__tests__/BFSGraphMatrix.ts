@@ -1,8 +1,8 @@
-import bfs from "@code/BFSGraphMatrix";
+import breadthFirstSearchOnGraph from "@code/BFSGraphMatrix";
 import { matrix2 } from "./graph";
 
 test("bfs - graph matrix", function () {
-    expect(bfs(matrix2, 0, 6)).toEqual([
+    expect(breadthFirstSearchOnGraph(matrix2, 0, 6)).toEqual([
         0,
         1,
         4,
@@ -10,7 +10,7 @@ test("bfs - graph matrix", function () {
         6,
     ]);
 
-    expect(bfs(matrix2, 6, 0)).toEqual(null);
+    expect(breadthFirstSearchOnGraph(matrix2, 6, 0)).toEqual(null);
 });
 
 
